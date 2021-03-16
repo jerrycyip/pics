@@ -15,7 +15,7 @@ This project is part of practice exercises for Stephen Grider's Udemy course, "M
 9) Using Ref's for DOM Access
 
 ## Result - Demo
-![Travel App](travel-app-demo.gif)
+![Search Pics App](pics-demo-cars.gif)
 
 
 ## Setting up the APIs
