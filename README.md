@@ -32,7 +32,7 @@ As per best practice, we configure our .gitignore file in order to declare Unspl
 ```
 REACT_APP_UNSPLASH_KEY=**************************
 ```
-- [ ] Add this code to the very top of your .js file responsible Unsplash API functionality (for example, in my ./src/api/unsplash.js file):
+- [ ] Add this code to the very top of your .js file for handling Unsplash API functionality (for example, in ./src/api/unsplash.js file):
 ```
 const dotenv = require('dotenv');
 dotenv.config();
