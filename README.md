@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Search for Images (Pics) App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 This project comprises a basic search bar that retrieves images from [Unsplash's Search Photos API](https://unsplash.com/documentation#search-photos) and displays the list of image results in a CSS Grid that has custom sizing for each image based on each image's height.  In addition to the custom CSS grid image styling, we also leverage [Semantic UI's stylesheet](https://semantic-ui.com/) for styling our search bar  (stylesheet href link included in index.html).  We leverage Semantic UI styling so as to ensure the project's main focus is primarily on practicing React JS concepts.
