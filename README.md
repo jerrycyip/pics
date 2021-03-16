@@ -1,6 +1,46 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project comprises a basic search bar that retrieves images from [Unsplash's Search Photos API](https://unsplash.com/documentation#search-photos) and displays the list of image results in a CSS Grid that has custom sizing for each image based on each image's height.  In addition to the custom CSS grid image styling, we leverage [Semantic UI's stylesheet](https://semantic-ui.com/) for styling our search bar  (semantic css stylesheet href link included in main index.html file) so as to ensure the project's main focus is primarily on practicing React JS concepts.
+
+This project is part of practice exercises for Stephen Grider's Udemy course, "Modern React with Redux".  The project helps practice using core React JS concepts including the following:  
+1) Building Content with JSX
+2) Communicating with Props
+3) Structuring Apps with Class-Based Components
+4) State in React Component
+5) Understanding Lifecycle Methods
+6) Handling User Input with Forms and Events
+7) Making API Requests with React
+8) Building Lists of Records
+9) Using Ref's for DOM Access
+
+## Result - Demo
+![Travel App](travel-app-demo.gif)
+
+
+## Setting up the APIs
+### Step 1: Sign-up for developer API keys
+This project uses the [Unsplash's Search Photos API](https://unsplash.com/documentation#search-photos).  To use Unsplash's API, you can sign up for a free Unsplash API key [here](https://unsplash.com/developers).
+
+### Step 2: Environment Variables
+As per best practice, we configure our .gitignore file in order to declare Unsplash's API key and ensure it remains private as opposed to publicly visible when pushing to GitHub.  This process is as follows:
+
+- [ ] Use npm or yarn to install the dotenv package ```npm install dotenv```. This will allow us to use environment variables we set in a new file
+- [ ] Create a new ```.env``` file in the root of your project
+- [ ] Go to your .gitignore file and add ```.env``` - this will make sure that we don't push our environment variables to Github! If you forget this step, all of the work we did to protect our API keys was pointless.
+- [ ] Fill the .env file with your REACT API keys like this: (The name of the variable needs to begin with REACT_APP_)
+```
+REACT_APP_UNSPLASH_KEY=**************************
+```
+- [ ] Add this code to the very top of your .js file responsible Unsplash API functionality (for example, in my ./src/api/unsplash.js file):
+```
+const dotenv = require('dotenv');
+dotenv.config();
+```
+- [ ] Reference variables you created in the .env file by putting ```process.env``` in front of it, an example might look like this:
+```
+console.log(`Your API key is ${process.env.REACT_APP_UNSPLASH_KEY}`);
+```
 
 ## Available Scripts
 
