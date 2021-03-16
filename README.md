@@ -41,10 +41,13 @@ dotenv.config();
 ```
 console.log(`Your API key is ${process.env.REACT_APP_UNSPLASH_KEY}`);
 ```
+## Getting Started
+
+In your terminal, run npx create-react-app your-app-name (e.g. "pics").  This will automatically install the base React JS project dependencies along with creating starter files in a new folder (named whatever you enter as your app-name).  Upon completion navigate to the automatically generated project folder. Then navigate to the 'src' subfolder where it is suggested to delete the starter files in order to reduce clutter and make space for creating your own project files like index.js etc.  The other starter files (outside of the src sub-folder), however can be left as is.
 
 ## Available Scripts
 
-In the project directory, you can run:
+After creating the necessary project files, you can start your application by navigating to the project directory and running:
 
 ### `npm start`
 
